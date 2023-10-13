@@ -31,7 +31,38 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            Console.WriteLine("Reporter:");
+            Console.ReadLine();
+            Console.WriteLine("Don't speak into this mic and I'll buy you whatever you want.");
+            Console.ReadLine();
+            Console.WriteLine("Desmond Benjamin:");
+            Console.ReadLine();
+            Console.WriteLine("Ok");
+            Console.ReadLine();
+            Console.WriteLine("Reporter:");
+            Console.ReadLine();
+            Console.WriteLine("Your not meant to speak");
+            Console.ReadLine();
+            Console.WriteLine("Would you like to try that again?");
+            Console.ReadLine();
+            Console.WriteLine("Desmond Benjamin:");
+            Console.ReadLine();
+            Console.WriteLine("Ok");
+            Console.ReadLine();
+            Console.WriteLine("Reporter:");
+            Console.ReadLine();
+            Console.WriteLine("Don't speak into this mic and I'll buy you whatever you want.");
+            Console.ReadLine();
+            Console.WriteLine("What's your name");
+            Console.ReadLine();
+            Console.WriteLine("Desmond Benjamin:");
+            Console.ReadLine();
+            Console.WriteLine("Desmond Benjamin.");
+            Console.ReadLine();
+            Console.WriteLine("Error with code. Cannot Continue.");
+            Console.ReadLine();
+            Console.Beep(1000, 5000);
+            Console.ReadLine();
         }
     }
 }
