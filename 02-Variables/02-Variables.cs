@@ -14,7 +14,9 @@ Main Tasks:
 
 Questions:
 1. What is a variable?
+Variables are containers for storing data values.
 2. What is a string?
+A string is a series of characters that is used to represent text.
 
 Extension Tasks:
 1. Try creating two string variables and using them in the same message.
@@ -34,8 +36,11 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-            
-
+            string name = "Desmond";
+            Console.WriteLine("Hello " + name + " I hope you have a great stay at our website!");
+            Console.ReadLine();
+            Console.WriteLine("Okay " + name + ", I would like to recommend you these two specific articles on the site.");
+            Console.ReadLine();
         }
     }
 }
