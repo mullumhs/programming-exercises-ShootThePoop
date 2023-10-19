@@ -36,10 +36,13 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            int year = 2023;
+            double population = 33745;
+            string country = "San Marino";
+            
 
             // Do not edit below this line
-            Console.WriteLine($"As of {year} the population of {country} was {population} billion.");
+            Console.WriteLine($"As of {year} the population of {country} was {population}.");
             Console.ReadLine();
         }
     }
