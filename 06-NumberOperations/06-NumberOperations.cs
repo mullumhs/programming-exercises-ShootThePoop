@@ -49,10 +49,20 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // How to input a number from the user and store it in a variable 'x'
-            Console.WriteLine("Please enter a number for X:");
+            Console.Write("Please enter a number for X: ");
             double x = Convert.ToDouble(Console.ReadLine());
 
             // Your code goes below here
+            Console.Write("Please enter a number for Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            // Add
+            Console.WriteLine($"{x} plus {y} = {x + y}");
+            Console.WriteLine($"{x} multiplied by {y} = {x * y}");
+            Console.WriteLine($"{x} divided by {y} = {x / y}");
+            Console.WriteLine($"{x} minus {y} = {x - y}");
+            Console.WriteLine($"The difference between {x} and {y} is {x - y}");
+            Console.ReadLine();
 
         }
     }
