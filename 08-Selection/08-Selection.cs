@@ -53,7 +53,22 @@ namespace ProgrammingExercisesIST
             int mark = Convert.ToInt32(Console.ReadLine());
 
             // Your code goes below here
+            if (mark > 100)
+            { Console.WriteLine("How did you even manage that?"); }
 
+            else if (mark < 0)
+            { Console.WriteLine("How did you even manage that?"); }
+
+            else if (mark >= 50)
+            {
+                Console.WriteLine("Pass.");
+            }
+
+            else if (mark < 50)
+            {
+                Console.WriteLine("Fail.");
+            }
+            Console.ReadLine();
         }
     }
 }
