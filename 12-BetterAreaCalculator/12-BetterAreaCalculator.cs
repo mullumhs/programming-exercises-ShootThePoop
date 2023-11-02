@@ -50,7 +50,71 @@ namespace ProgrammingExercisesIST
         {
             // Your code goes below here
 
+            ShowMenu();
+
+            string choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+                CCircle()
+            }
+               
+            else if (choice == "2")
+            {
+                CRectangle();
+            }
+
+            else if (choice == "3")
+            {
+                CTriangle();
+            }
+
+            // ReadLine
+            Console.ReadLine();
+
         }
+
+        private static void ShowMenu()
+        {
+            Console.WriteLine("Choose an Option:");
+            Console.WriteLine("1. Area of Circle");
+            Console.WriteLine("2. Area of Rectangle");
+            Console.WriteLine("3. Area of Triangle");
+        }
+
+        private static void CCircle()
+        {
+            Console.Write("What is your radius? ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Area of a circle = {Math.PI * Math.Pow(radius, 2)}");
+        }
+
+        private static void CRectangle()
+        {
+            Console.Write("What is your length? ");
+            double length = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("What is your width? ");
+            double width = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"Area of a rectangle = {length * width}");
+        }
+
+        private static void CTriangle()
+        {
+            Console.Write("What is your length? ");
+            double tlength = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("What is your width? ");
+            double twidth = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"Area of a Triangle = {tlength * twidth * 0.5}");
+        }
+
+            
+
+
+
     }
 }
 
