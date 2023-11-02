@@ -63,7 +63,7 @@ namespace ProgrammingExercisesIST
 
             if (choice == "1")
             {
-                Console.WriteLine("What is your radius? ");
+                Console.Write("What is your radius? ");
                 double radius = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine($"Area of a circle = {Math.PI * Math.Pow(radius, 2)}");
             }
@@ -75,10 +75,10 @@ namespace ProgrammingExercisesIST
 
             if (choice == "2")
             {
-                Console.WriteLine("What is your length? ");
+                Console.Write("What is your length? ");
                 double length = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("What is your width? ");
+                Console.Write("What is your width? ");
                 double width = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine($"Area of a rectangle = {length * width}");
@@ -91,10 +91,10 @@ namespace ProgrammingExercisesIST
 
             if (choice == "3")
             {
-                Console.WriteLine("What is your length? ");
+                Console.Write("What is your length? ");
                 double tlength = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("What is your width? ");
+                Console.Write("What is your width? ");
                 double twidth = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine($"Area of a Triangle = {tlength * twidth * 0.5}");
