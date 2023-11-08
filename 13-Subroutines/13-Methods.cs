@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 /*
 ===============================================================================
@@ -34,9 +35,31 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Call the methods here
-            
+
+            SayHello();
+
+           Exit();
         }
 
+        private static void SayHello()
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Hello World");
+        }
+
+        static void Exit()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine();
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadLine();
+
+
+        }
+
+        
+
+        
         // Write your methods here
 
     }

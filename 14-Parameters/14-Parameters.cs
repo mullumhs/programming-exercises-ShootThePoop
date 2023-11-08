@@ -48,7 +48,47 @@ namespace ProgrammingExercisesIST
         {
             // Call the methods here, passing in the required arguments
 
+            SayHello();
+            Subtract();
+            Exit();
         }
+
+        private static void SayHello()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"Hello {name}.");
+            
+        }
+
+
+        private static void Subtract()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Please enter a number for X: ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Please enter a number for Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"{x} minus {y} = {x - y}");
+        }
+
+
+        private static void Exit()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadLine();
+        }
+      
+
+
+
+     
+
 
         // Write your methods including parameters here
 

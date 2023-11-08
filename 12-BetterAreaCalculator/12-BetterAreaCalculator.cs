@@ -56,7 +56,7 @@ namespace ProgrammingExercisesIST
 
             if (choice == "1")
             {
-                CCircle()
+                CCircle();
             }
                
             else if (choice == "2")
