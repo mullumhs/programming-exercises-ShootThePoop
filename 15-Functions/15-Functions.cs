@@ -68,8 +68,8 @@ namespace ProgrammingExercisesIST
             int y = GetNumber();
 
             // Write your code here
-
-            
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"{x} + {y} equals {AddNumbers(x, y)}");
 
             // "Exit" method is called here
             Exit();
@@ -77,7 +77,10 @@ namespace ProgrammingExercisesIST
 
         // Create your functions here
 
-
+        private static int AddNumbers(int x, int y)
+        {
+            return x + y;
+        }
 
         // This is a function I have written to get a number from the user
         private static int GetNumber()

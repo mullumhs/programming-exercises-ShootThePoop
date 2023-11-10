@@ -69,7 +69,6 @@ namespace ProgrammingExercisesIST
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Please enter a number for X: ");
             double x = Convert.ToDouble(Console.ReadLine());
-            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Please enter a number for Y: ");
             double y = Convert.ToDouble(Console.ReadLine());
 
