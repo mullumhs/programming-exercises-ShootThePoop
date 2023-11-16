@@ -76,47 +76,51 @@ namespace ProgrammingExercisesIST
             MainMenu();
 
             WaitForKeyPress();
-
-
-            private static void MainMenu()
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-
-                Console.Clear();
-                Console.WriteLine("What would you like to do?");
-                Console.WriteLine("1. Fahrenheit to Celsius");
-                Console.WriteLine("2. Celsius to Fahrenheit");
-                string choice = Console.ReadLine();
-
-
-
-
-
-                if (choice == "1")
-                {
-                    Console.Write("How many fahrenheit? ");
-                    double fr = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine($"{fr} fahrenheit to celsius = {(fr - 32) * 5 / 9}");
-                }
-
-                else if (choice == "2")
-                {
-                    Console.Write("How many celsius? ");
-                    double cel = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine($"{cel} celsius to fahrenheit = {(cel * 9 / 5) + 32}");
-                }
-
-            }
-
-            // Waits for the user to press any key
-            private static void WaitForKeyPress()
-            {
-                Console.WriteLine();
-                Console.WriteLine("Press any key to continue...");
-                Console.ReadKey();
-            }
-
         }
+
+
+        private static void MainMenu()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.Clear();
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1. Fahrenheit to Celsius");
+            Console.WriteLine("2. Celsius to Fahrenheit");
+            string choice = Console.ReadLine();
+
+
+
+
+            if (choice == "1")
+            {
+                Console.Write("How many fahrenheit? ");
+                double fr = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{fr} fahrenheit to celsius = {(fr - 32) * 5 / 9}");
+            }
+
+            else if (choice == "2")
+            {
+                Console.Write("How many celsius? ");
+                double cel = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{cel} celsius to fahrenheit = {(cel * 9 / 5) + 32}");
+            }
+
+            else
+            {
+                Console.WriteLine($"{choice} is not a valid answer.");
+            }
+        }
+
+        // Waits for the user to press any key
+        private static void WaitForKeyPress()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+            }
+
+        
     }
 }
 
