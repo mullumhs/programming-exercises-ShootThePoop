@@ -53,8 +53,12 @@ namespace _36_Testing
                 Console.WriteLine("Invalid.");
             }
 
-            Repeat();
             
+
+            while (true)
+            {
+                Repeat();
+            }
 
             Schnitty();
             
@@ -140,7 +144,7 @@ namespace _36_Testing
             private static void Exit()
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Press any key to exit...");
+                Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
             }
 
