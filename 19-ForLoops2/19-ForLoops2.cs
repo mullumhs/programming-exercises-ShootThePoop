@@ -72,18 +72,15 @@ namespace ProgrammingExercisesIST
 
 
             WaitBetween("Loop to find numbers divisible by 2:");
-            /*
-            for (int d2 = 0; d2 < 20; d2++)
-            {
-                if (d2 == 3)
+            
+            for (int d2 = 1; d2 < 20; d2++)
+            { 
+                if (d2 % 2 == 0)
                 {
-                    Console.WriteLine("Three");
+                    Console.WriteLine("Divisible by 2");
                 }
-
-                else if(d2 == 6)
-                {
-                    Console.WriteLine("Six");
-                }
+                
+                
 
                 else
                 {
@@ -91,9 +88,9 @@ namespace ProgrammingExercisesIST
                 }
             }
 
-            Wrong.. need to fix
+            
 
-            */
+           
 
             // Wait at end
             WaitAtEnd();

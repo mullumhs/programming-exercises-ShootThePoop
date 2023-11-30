@@ -48,8 +48,29 @@ namespace ProgrammingExercisesIST
 
         static void FizzBuzz()
         {
-            // Write your code here
+            for (int Fizz = 1; Fizz < 20; Fizz = Fizz + 1)
+            {
 
+                if (Fizz % 3 == 0 && Fizz % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+
+                else if (Fizz % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+
+                else if (Fizz % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+
+                else
+                {
+                    Console.WriteLine(Fizz);
+                }
+            }
         }
 
         private static void WaitAtEnd()
